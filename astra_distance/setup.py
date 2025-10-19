@@ -25,7 +25,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'astra_distance = astra_distance.astra_distance:main',
+            'astra_distance = astra_distance.astra_distance_node:main',
         ],
     },
 )
