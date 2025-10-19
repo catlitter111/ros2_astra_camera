@@ -29,8 +29,8 @@ def generate_launch_description():
     )
 
     pixel_node = Node(
-        package='astra_distance',
-        executable='astra_distance',
+        package='astra_pixel_distance',
+        executable='pixel_distance_node.py',
         name='pixel_distance_node',
         output='screen',
         parameters=[{

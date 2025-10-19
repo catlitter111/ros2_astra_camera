@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'astra_distance'
+package_name = 'pixel_distance'
 
 setup(
     name=package_name,
@@ -10,12 +10,12 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/launch', ['launch/astra_distance.launch.py']),
+        ('share/' + package_name + '/launch', ['launch/pixel_distance.launch.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='monster',
-    maintainer_email='monster@todo.todo',
+    maintainer_email='your@email.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     extras_require={
@@ -25,7 +25,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'astra_distance = astra_distance.astra_distance_node:main',
+            'pixel_distance = pixel_distance.pixel_distance_node:main',
         ],
     },
 )
