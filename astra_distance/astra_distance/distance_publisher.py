@@ -83,8 +83,8 @@ class DistancePublisher(Node):
                 self.latest_depth_image = self.bridge.imgmsg_to_cv2(msg, "passthrough")
                 
             # 如果有目标点，计算距离
-            if self.target_point is not None:
-                self.calculate_and_publish_distance()
+            # if self.target_point is not None:
+            #     self.calculate_and_publish_distance()
                 
         except Exception as e:
             self.get_logger().error(f'深度图像处理错误: {str(e)}')
